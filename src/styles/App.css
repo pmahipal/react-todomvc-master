@@ -1,0 +1,96 @@
+.App{
+  display:flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+.tile{
+  border: 2px solid #666;
+  box-shadow: 0 2px 2px #aaa;
+  width:300px;
+  padding:12px;
+  text-align: center;
+}
+.tile-header{
+  background-color:#eee;
+}
+.tile-createTask{
+  display: flex;
+  justify-content: space-between;
+}
+.input-box{
+  background: transparent;
+  width: 80%;
+  border:none;
+  font-size: large;
+}
+.input-box:focus {
+  outline:none;
+}
+.add-btn{
+  border:none;
+  background:none;
+}
+.add-btn:hover{
+  cursor: pointer;
+}
+.task-ul{
+  list-style: none;
+  padding-left: 0;
+}
+.tile-li{
+  margin: 16px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items:center; 
+  transition: 0.35s ease;
+  font-size: 20px;
+}
+.tile-li:hover{
+  transform: scale(1.2);
+  font-size: 20px;
+}
+.tile-li input[type=checkbox] {
+  transform: scale(1.5);
+  cursor: pointer;
+}
+.divs{
+  align-items: center;
+  display: flex;
+  overflow:hidden;
+  word-wrap:break-word;
+}
+.completed{
+  text-decoration-line: line-through;
+  color: red; 
+}
+.li-text{
+  overflow:hidden;
+  word-wrap:break-word;
+  padding-left: 10px;
+}
+.destroy{
+  background:none;
+  border: none;
+}
+.destroy:hover{
+  cursor: pointer;
+}
+.destroy:focus, .removeAll-btn:focus {
+  outline:none;
+}
+.removeAll-btn{
+  background-color: transparent;
+  color:#dc3545;
+  border:2px solid #dc3545;
+  padding:10px;
+  margin: 10px auto;
+  border-radius: 8px;
+  transition: .15s ease-in-out;
+  box-sizing: border-box;
+}
+.removeAll-btn:hover{
+  background-color:#dc3545;
+  color: white;
+  cursor: pointer;
+}

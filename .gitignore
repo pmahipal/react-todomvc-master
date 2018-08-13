@@ -1,0 +1,17 @@
+### VisualStudio ###
+
+packages/
+packages
+dist
+dist/
+
+# dependencies
+/node_modules
+
+# Ignore file named 'README.example.md'
+README.md
+README.example.md
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
